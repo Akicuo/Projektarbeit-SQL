@@ -24,4 +24,4 @@ VALUES
 ('10-1471-6', 'Babaja', 'Slobodanka', '01.10.2019', '4600 Olten'),
 ('10-2466-6', 'Gugler', 'Roger', '01.10.2018', '3400 Burgdorf'),
 ('13-3704-2', 'Genkinger', 'Marian', '01.10.2019', NULL),
-('12-8867-9', 'Dell'Amore', 'Michele', '01.10.2019', '4900 Langenthal');
+('12-8867-9', 'Dell''Amore', 'Michele', '01.10.2019', '4900 Langenthal');
