@@ -47,5 +47,4 @@ alter TABLE Assistent
 
 
     
-ALTER TABLE Schueler
-    ADD CONSTRAINT Uk_MatrikalNr UNIQUE(MatrikalNr);
+
