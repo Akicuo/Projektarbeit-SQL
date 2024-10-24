@@ -57,7 +57,7 @@ CREATE TABLE Pruefungen (
 );
 
 
-DROP TABLE IF EXISTS InSesion_TEst;
+
 
 CREATE TABLE InSesion_TEst (
     Pruefung_ID INT IDENTITY(1,1) PRIMARY KEY NOT NULL,
