@@ -19,5 +19,7 @@ CREATE TABLE Pruefungen (
     FOREIGN KEY (Pruefungsaufsicht) REFERENCES Professor(PersonalNr),
     
 );
+ALTER TABLE Vorlesungen 
+    ADD CONSTRAINT fk_Vorlesung FOREIGN KEY (Vorlesung_ID) REFERENCES Vorlesungen(Vorlesung_ID);
 
 --------------
