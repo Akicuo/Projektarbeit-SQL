@@ -26,7 +26,7 @@ CONSTRAINT uk_schuelerNR UNIQUE (MatrikalNr)
 
 
 CREATE TABLE Vorlesungen (
-    Vorlesung_ID INT NOT NULL,
+    Vorlesung_ID INT IDENTITY(1,1) NOT NULL,
     Titel varchar(100) NOT NULL,
     MatrikalNr VARCHAR(9) not null,
     FOREIGN KEY (Matrikalnr) REFERENCES Schueler(Matrikalnr),
