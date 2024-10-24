@@ -59,7 +59,9 @@ CREATE TABLE Pruefungen (
 
 CREATE TABLE InSesion_Test(
     Pruefung_ID int,
-    MatrikalNr VARCHAR(9)
+    MatrikalNr VARCHAR(9),
+    PruefungsTermin DATE,
+    PruefungsNote float,
     Primary Key (Pruefung_ID, MatrikalNr),
     CONSTRAINT fk_Student FOREIGN KEY (MatrikalNr) REFERENCES Schueler(MatrikalNr),
     CONSTRAINT fk_pruefung FOREIGN KEY (Pruefung_ID) REFERENCES Pruefungen(Pruefung_ID)
@@ -90,6 +92,8 @@ Alter TABLE Pruefungen
 
 Alter TABLE Pruefungen
     drop column PruefungsTermin;
+Alter TABLE Pruefungen
+    add PruefungThema varchar(100) not null;
 
 
 ---------------------------------------------------------------
