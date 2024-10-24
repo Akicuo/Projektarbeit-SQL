@@ -57,15 +57,16 @@ CREATE TABLE Pruefungen (
 );
 
 
-CREATE TABLE InSesion_Test(
-    Pruefung_ID int,
-    MatrikalNr VARCHAR(9),
-    PruefungsTermin DATE,
-    PruefungsNote float,
-    Primary Key (Pruefung_ID, MatrikalNr),
-    CONSTRAINT fk_Student FOREIGN KEY (MatrikalNr) REFERENCES Schueler(MatrikalNr),
-    CONSTRAINT fk_pruefung FOREIGN KEY (Pruefung_ID) REFERENCES Pruefungen(Pruefung_ID)
-)
+DROP TABLE IF EXISTS InSesion_TEst;
+
+CREATE TABLE InSesion_TEst (
+    Pruefung_ID INT IDENTITY(1,1) PRIMARY KEY NOT NULL,
+    MatrikalNr VARCHAR (9) NOT NULL,
+    Termin DATE NULL,
+    Note DECIMAL (2, 1) NULL,
+    CONSTRAINT fk_pruefung FOREIGN KEY ([Pruefung_ID]) REFERENCES [dbo].[Pruefungen] ([Pruefung_ID]),
+    CONSTRAINT fk_Student FOREIGN KEY ([MatrikalNr]) REFERENCES [dbo].[Schueler] ([MatrikalNr])
+);
 
 
 DECLARE @i INT = 1;
