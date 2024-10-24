@@ -16,6 +16,7 @@ CREATE TABLE [dbo].[InSesion_Test] (
     CONSTRAINT [fk_pruefung] FOREIGN KEY ([Pruefung_ID]) REFERENCES [dbo].[Pruefungen] ([Pruefung_ID]),
     CONSTRAINT [fk_Student] FOREIGN KEY ([MatrikalNr]) REFERENCES [dbo].[Schueler] ([MatrikalNr])
 );
+drop DATABASE UniDB
 
 
 
