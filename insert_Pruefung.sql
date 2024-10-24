@@ -1,6 +1,20 @@
-Insert INTO Pruefungen (Pruefungsaufsicht, PruefungsTermin)
+Insert INTO Pruefungen (Pruefungsaufsicht, PruefungThema)
 VALUES
-()
+(6, 'Ethik'),
+(7, 'Kinetik'),
+(4, 'Elektrotechnik'),
+(5, 'Radiologie'),
+(3, 'Literaturgeschichte'),
+(7, 'Kinetik'),
+(7, 'Kinetik'),
+(3, 'Literaturgeschichte'),
+(3, 'Literaturgeschichte'),
+(3, 'Sprachtheorie'),
+(3, 'Sprachtheorie'),
+(3, 'Literaturgeschichte'),
+(4, 'Elektrotechnik'),
+(1, 'Allgemeine Relativitätstheorie'),
+(5, 'Biochemie')
 
 /*
 Matrikel-Nr	Vorlesung	Professor	Termin	Note
