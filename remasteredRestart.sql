@@ -84,9 +84,6 @@ VALUES ('Albert', 'Einstein', '18790314', 14),
 
 
 
-alter TAble Vorlesungen
-    alter column Vorlesung_ID int IDENTITY(1,1) NOT NULL  PRIMARY KEY;
-
 
 ---------------------------------------------------------------
 
