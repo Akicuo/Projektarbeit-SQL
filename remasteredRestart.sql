@@ -88,6 +88,10 @@ VALUES ('Albert', 'Einstein', '18790314', 14),
 Alter TABLE Pruefungen
     alter COLUMN PruefungsTermin date null;
 
+Alter TABLE Pruefungen
+    drop column PruefungsTermin;
+
+
 ---------------------------------------------------------------
 
 
