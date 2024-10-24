@@ -41,3 +41,5 @@ alter TABLE Vorlesungen
     add PersonalNr int Not Null;
     alter TABLE Vorlesungen
     add CONSTRAINT fk_vorleser FOREIGN KEY (PersonalNr) REFERENCES Professor(PersonalNr);
+alter TABLE Assistent
+    alter COLUMN PersonalNr_Chef int Null;
