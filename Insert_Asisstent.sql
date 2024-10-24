@@ -1,0 +1,1 @@
+Insert INTO Assistent(Vorname, Nachname, Geburtsdatum) VALUES('Max', 'Mustermann', '1990-01-01')

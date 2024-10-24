@@ -28,3 +28,16 @@ CREATE TABLE InSesion_Test(
     MatrikalNr INT
     Primary Key (Pruefung_ID, MatrikalNr)
 )
+---------------
+ALTER TABLE InSesion_Test 
+    ADD CONSTRAINT fk_Student FOREIGN KEY (MatrikalNr) REFERENCES Schueler(MatrikalNr);
+ALTER TABLE InSesion_Test 
+    ADD CONSTRAINT fk_pruefung FOREIGN KEY (Pruefung_ID) REFERENCES Pruefungen(Pruefung_ID);
+alter TABLE Assistent
+    add PersonalNr_Chef int Not Null;
+alter TABLE Assistent
+    add CONSTRAINT fk_Assistent FOREIGN KEY (PersonalNr_Chef) REFERENCES Professor(PersonalNr);
+alter TABLE Vorlesungen
+    add PersonalNr int Not Null;
+    alter TABLE Vorlesungen
+    add CONSTRAINT fk_vorleser FOREIGN KEY (PersonalNr) REFERENCES Professor(PersonalNr);
