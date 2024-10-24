@@ -95,7 +95,9 @@ Alter TABLE Pruefungen
 Alter TABLE Pruefungen
     add PruefungThema varchar(100) not null;
 
+alter table insesiom
 
 ---------------------------------------------------------------
 
 
+alter table insen
