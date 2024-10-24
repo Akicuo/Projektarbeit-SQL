@@ -25,7 +25,7 @@ ALTER TABLE Vorlesungen
 --------------
 CREATE TABLE InSesion_Test(
     Pruefung_ID int,
-    MatrikalNr INT
+    MatrikalNr VARCHAR(9)
     Primary Key (Pruefung_ID, MatrikalNr)
 )
 ---------------
@@ -41,3 +41,10 @@ alter TABLE Vorlesungen
     add PersonalNr int Not Null;
     alter TABLE Vorlesungen
     add CONSTRAINT fk_vorleser FOREIGN KEY (PersonalNr) REFERENCES Professor(PersonalNr);
+alter TABLE Assistent
+    alter COLUMN PersonalNr_Chef int Null;
+
+
+
+    
+
