@@ -24,3 +24,4 @@ Create TABLE Raum(
     Raum_ID int IDENTITY(1,1) PRIMARY KEY NOT Null,
 )
 ---------------------------------------------------------------
+
