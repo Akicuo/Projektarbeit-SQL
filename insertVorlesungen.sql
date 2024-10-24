@@ -1,4 +1,4 @@
-SET IDENTITY_INSERT VORLESUNGEN ON;
+
 
 INSERT INTO Vorlesungen (Titel, MatrikalNr, PersonalNr)
 VALUES
@@ -25,5 +25,5 @@ VALUES
     ('Kinetik', '13-5660-2', (SELECT top 1 PersonalNr FROM Professor WHERE Concat(Nachname, ' ', Vorname) = 'van''t Hoff Jacobus')),
     ('Allgemeine Relativitätstheorie', '14-0556-8', (SELECT top 1 PersonalNr FROM Professor WHERE Concat(Nachname, ' ', Vorname) = 'Röntgen Wilhelm Conrad'));
 
-SET IDENTITY_INSERT VORLESUNGEN OFF;
+
 
