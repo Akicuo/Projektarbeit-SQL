@@ -1,5 +1,5 @@
 CREATE TABLE Schueler(
-MatrikalNr int IDENTITY(1,1) PRIMARY KEY NOT Null,
+MatrikalNr VARCHAR(9) NOT Null,
 Vorname varchar(50) NOT Null,
 Nachname varchar(50) NOT Null,
 Eintritsdatum date NOT Null
