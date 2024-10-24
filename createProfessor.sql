@@ -6,3 +6,8 @@ VALUES ('Albert', 'Einstein', '18790314', 14),
 ('Wilhelm Conrad' , 'Röntgen', '18450327', 10),
 ('Jean-Paul', 'Satre', '19050621', 1),
 ('Jacobus', 'van''t Hoff', '18520830', 3);
+
+-- Repeat this statement 32 times.
+INSERT INTO [dbo].[Raum]
+DEFAULT VALUES;
+
