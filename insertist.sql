@@ -27,3 +27,12 @@ VALUES
     (13, '12-5776-4', '2021-05-26 10:00', 5.5),
     (14, '14-0556-8', NULL, NULL),
     (15, '09-7270-8', '2020-05-25 08:30', 4.5);
+
+
+
+create table vorlesung(
+    vorlesung_ID int IDENTITY(1,1) not null,
+    Personal_ID int 
+    Primary Key(vorlesung_ID, Personal_ID)
+    CONSTRAINT fk_personal_ID FOREIGN KEY (Personal_ID) REFERENCES Professor(PersonalNr)
+);
