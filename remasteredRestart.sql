@@ -27,13 +27,13 @@ CONSTRAINT uk_schuelerNR UNIQUE (MatrikalNr)
 
 
 
-CREATE TABLE Vorlesungen (
+CREATE TABLE Vorlesungen_used (
     Vorlesung_ID INT IDENTITY(1,1) NOT NULL,
     Titel varchar(100) NOT NULL,
     MatrikalNr VARCHAR(9) not null,
     FOREIGN KEY (Matrikalnr) REFERENCES Schueler(Matrikalnr),
     PRIMARY KEY (Vorlesung_ID),
-    CONSTRAINT fk_Vorlesung FOREIGN KEY (Vorlesung_ID) REFERENCES Vorlesungen(Vorlesung_ID),
+    CONSTRAINT fk_Vorlesung FOREIGN KEY (Vorlesung_ID) REFERENCES Vorlesungen_used(Vorlesung_ID),
     PersonalNr int Not Null,
     CONSTRAINT fk_vorleser FOREIGN KEY (PersonalNr) REFERENCES Professor(PersonalNr)
 );
@@ -69,6 +69,15 @@ CREATE TABLE InSesion_TEst (
 );
 
 
+CREATE Table Vorgaenger_Nachgaenger(
+    Vorlesungs_IDVorgaenger int,
+    Vorlesungs_IDNachgaenger int,
+    PRIMARY KEY (Vorlesungs_IDVorgaenger, Vorlesungs_IDNachgaenger),
+    CONSTRAINT fk_Vorgaenger FOREIGN KEY (Vorlesungs_IDVorgaenger) REFERENCES Vorlesungen_used(Vorlesung_ID),
+    CONSTRAINT fk_Nachgaenger FOREIGN KEY (Vorlesungs_IDNachgaenger) REFERENCES Vorlesungen_used(Vorlesung_ID)
+)
+
+
 DECLARE @i INT = 1;
 WHILE @i <= 32
 BEGIN
@@ -96,7 +105,9 @@ Alter TABLE Pruefungen
 Alter TABLE Pruefungen
     add PruefungThema varchar(100) not null;
 
-alter table insesiom
+alter table insesiom;
+
+
 
 ---------------------------------------------------------------
 

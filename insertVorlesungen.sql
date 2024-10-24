@@ -1,6 +1,6 @@
 
 
-INSERT INTO Vorlesungen (Titel, MatrikalNr, PersonalNr)
+INSERT INTO Vorlesungen_used (Titel, MatrikalNr, PersonalNr)
 VALUES
     ('Physikalische Chemie', '07-0633-6', 2),
     ('Kinetik', '09-0665-1', 7),
