@@ -51,7 +51,7 @@ Create TABLE Assistent(
 CREATE TABLE Pruefungen (
     Pruefung_ID INT IDENTITY(1,1) PRIMARY KEY,
     Pruefungsaufsicht INT NOT NULL,
-    PruefungsTermin DATE not null
+    PruefungsTermin DATE Not Null,
     FOREIGN KEY (Pruefungsaufsicht) REFERENCES Professor(PersonalNr),
     
 );
@@ -85,7 +85,8 @@ VALUES ('Albert', 'Einstein', '18790314', 14),
 
 
 
-
+Alter TABLE Pruefungen
+    alter COLUMN PruefungsTermin date null;
 
 ---------------------------------------------------------------
 
