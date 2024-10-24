@@ -7,6 +7,11 @@ VALUES ('Albert', 'Einstein', '18790314', 14),
 ('Jean-Paul', 'Satre', '19050621', 1),
 ('Jacobus', 'van''t Hoff', '18520830', 3);
 
+UPDATE Professor
+SET Nachname = 'Tesla'
+WHERE Vorname = 'Nikola';
+
+
 -- Repeat this statement 32 times.
 INSERT INTO [dbo].[Raum]
 DEFAULT VALUES;
